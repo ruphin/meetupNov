@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<meta name="theme-color" content="#2e9be6">
+<meta property="og:title" content="Web Component Meetup November 2017" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Presentation deck for Web Component Meetup November 2017" />
+<meta property="og:description" content="Presentation deck for Web Component Meetup November 2017" />
+<link rel="canonical" href="https://meetupnov.ruph.in/" />
+<meta property="og:url" content="https://meetupnov.ruph.in/" />
+<meta property="og:site_name" content="Web Component Meetup November 2017" />
+
+<style>
+  :root {
+    --pink: #e9437a;
+    --blue: #2e9be6;
+    --dark: #272822;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v16/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v16/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v16/mnpfi9pxYH-Go5UiibESIpBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+  slidem-deck[loading] {
+    display: none;
+  }
+
+  .centerCallout {
+    display: inline-block;
+    padding: 40px;
+    background: var(--pink);
+    font-weight: 700;
+    font-size: 120px;
+    letter-spacing: 2px;
+  }
+
+  .centerCallout.blue {
+    background: var(--blue);
+  }
+
+  [centerbg] {
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-color: var(--dark);
+  }
+
+  slidem-deck {
+    color: white;
+  }
+
+  slidem-slide h2 {
+    margin-bottom: 80px !important;
+  }
+
+  slidem-slide p[width="1200px"] {
+    width: 1200px;
+  }
+
+  slidem-slide[links] h2 {
+    margin-bottom: 20px !important;
+  }
+
+  slidem-slide[links] p {
+    margin-bottom: 180px !important;
+  }
+
+  span[right] {
+    float: right;
+  }
+
+  div[platform] p {
+    font-size: 108px;
+    font-weight: 900;
+    border-bottom: 8px solid white;
+    margin-bottom: 28px;
+  }
+
+  div[platform] {
+    display: inline-block;
+    padding: 50px;
+    background: var(--blue);
+  }
+</style>
+
+<!-- build:remove -->
+<span id="browser-sync-binding"></span>
+<!-- endbuild -->
+
+<script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-hi-sd-ce.js"></script>
+<script type="module" src="index.js"></script>
+<script nomodule src="index.nomodule.js"></script>
+
+<slidem-deck font="Roboto" loading>
+  <slidem-polymersummit-slide slide-out>
+    <h2 slot="title">Web Components</h2>
+    <p slot="subtitle">Past and Future</p>
+    <img slot="logo" src="/images/polymer.png">
+    <img slot="avatar" src="/images/avatar.jpg">
+    <p slot="event">Web Component Meetup November 2017</p>
+    <p slot="speaker">Goffert van Gool</p>
+    <a slot="email" href="mailto:ruphin@ruphin.net">ruphin@ruphin.net</a>
+    <a slot="twitter" href="https://twitter.com/ruphin_">@ruphin_</a>
+  </slidem-polymersummit-slide>
+
+  <slidem-slide slide-out background="/images/summit2015.jpg">
+  </slidem-slide>
+
+  <slidem-slide slide-out background="/images/islands.jpg">
+  </slidem-slide>
+
+  <slidem-slide slide-out background="/images/sharing.jpg">
+  </slidem-slide>
+
+  <slidem-slide slide-out background="/images/patchroom.jpg">
+  </slidem-slide>
+
+  <slidem-slide slide-out background="/images/summit2017.jpg">
+  </slidem-slide>
+
+  <slidem-slide fade-out centerbg background="/images/support.png">
+  </slidem-slide>
+
+  <slidem-slide center centerbg background="/images/supportBoxed.png">
+    <div center>
+      <p center reveal class="centerCallout blue">&gt; 60%</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in slide-out background="/images/fence.jpg">
+  </slidem-slide>
+
+  <slidem-slide slide-out background="--blue">
+    <h2 font-size="128px" line-height="1.1">Barriers to using cross-framework components</h2>
+    <p font-size="98px" line-height="1.3" reveal>- Size</p>
+    <p font-size="98px" line-height="1.3" reveal>- Performance</p>
+    <p font-size="98px" line-height="1.3" reveal>- Difficulty in use</p>
+    <p font-size="98px" line-height="1.3" reveal>- Added build complexity</p>
+  </slidem-slide>
+
+  <slidem-slide slide-in background="--blue">
+    <h2 font-size="128px" line-height="2.2">Framework sizes</h2>
+    <p width="1200px" font-size="98px" line-height="1.3">- Angular
+      <span right>111Kb</span>
+    </p>
+    <p width="1200px" font-size="98px" line-height="1.3">- Polymer
+      <span right>48Kb</span>
+    </p>
+    <p width="1200px" font-size="98px" line-height="1.3">- React
+      <span right>43Kb</span>
+    </p>
+    <p width="1200px" font-size="98px" line-height="1.3">- Vue
+      <span right>21Kb</span>
+    </p>
+  </slidem-slide>
+
+  <slidem-slide center slide-in slide-out background="/images/small.jpg">
+    <div center>
+      <p center reveal class="centerCallout blue">Lightweight components</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide slide-out background="/images/reactBundled.png">
+  </slidem-slide>
+
+  <slidem-slide center slide-out centerbg background="/images/gluon.png">
+    <div center>
+      <p center reveal class="centerCallout blue">GluonJS</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide background="--blue">
+    <h2 font-size="128px" line-height="1.1">GluonJS is</h2>
+    <p font-size="78px" line-height="1.7" reveal>- A full featured Web Component framework</p>
+    <p font-size="78px" line-height="1.7" reveal>- Extremely Lightweight ( &lt; 5Kb )</p>
+    <p font-size="78px" line-height="1.7" reveal>- Extremely Performant</p>
+    <p font-size="78px" line-height="1.7" reveal>- Supported on all modern browsers</p>
+  </slidem-slide>
+
+  <slidem-slide center slide-in slide-out background="--dark">
+    <div center>
+      <div platform>
+        <p>Use</p>
+        <p>The</p>
+        <p>Platform</p>
+      </div>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in slide-out background="--dark">
+    <div center>
+      <p center class="centerCallout blue">Code</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in background="--dark">
+    <div center>
+      <p center class="centerCallout blue">
+        <a href="/demo/index.html" target="_blank">Demo</a>
+      </p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide slide-in slide-out background="--blue">
+    <h2 font-size="128px" line-height="1.1">Easy to use</h2>
+    <p font-size="98px" line-height="1.7">
+      <a href="https://codepen.io/anon/pen/QOZdjq?editors=1010#0" target="_blank">- Codepen Demo</a>
+    </p>
+  </slidem-slide>
+
+  <slidem-slide slide-in slide-out background="--blue">
+    <h2 font-size="128px" line-height="1.1">Easy to install</h2>
+    <p font-size="98px" line-height="1.7" reveal>- npm install myelement</p>
+    <p font-size="98px" line-height="1.7" reveal>- done</p>
+  </slidem-slide>
+
+  <slidem-slide slide-out background="--dark">
+    <h2 font-size="128px" line-height="1.1">Production usage</h2>
+    <p font-size="98px" line-height="1.7" reveal>
+      <a href="https://overwebs.ruph.in" target="_blank"></a>- Overwebs</a>
+    </p>
+    <p font-size="98px" line-height="1.7" reveal>
+      <a href="https://slidem.ruph.in" target="_blank">- Slide'm</a>
+    </p>
+  </slidem-slide>
+
+  <slidem-slide slide-in center background="--dark">
+    <div center>
+      <img src="/images/unclesam.jpg">
+    </div>
+  </slidem-slide>
+
+  <slidem-polymersummit-slide slide-in>
+    <h2 slot="title">Thanks</h2>
+    <img slot="logo" src="/images/polymer.png">
+    <img slot="avatar" src="/images/avatar.jpg">
+    <p slot="event">Web Component Meetup November 2017</p>
+    <p slot="speaker">Goffert van Gool</p>
+    <a slot="email" href="mailto:ruphin@ruphin.net">ruphin@ruphin.net</a>
+    <a slot="twitter" href="https://twitter.com/ruphin_">@ruphin_</a>
+  </slidem-polymersummit-slide>
+
+
+  <slidem-slide links background="--blue" fade-in>
+    <h2 font-size="128px" line-height="1.1">GluonJS</h2>
+    <p font-size="98px" line-height="1.7">
+      <a href="https://github.com/ruphin/gluonjs" target="_blank">- https://github.com/ruphin/gluonjs</a>
+    </p>
+    <h2 font-size="128px" line-height="1.1">Slide'm</h2>
+    <p font-size="98px" line-height="1.7">
+      <a href="https://github.com/ruphin/slidem" target="_blank">- https://github.com/ruphin/slidem</a>
+    </p>
+  </slidem-slide>
