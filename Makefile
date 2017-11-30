@@ -15,5 +15,5 @@ publish: build
 .PHONY: publish
 
 production: build
-	docker build -t ruphin/slidem .
+	docker build -t ruphin/meetupnov .
 .PHONY: production
