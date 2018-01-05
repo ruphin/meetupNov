@@ -3,24 +3,24 @@ import { html, GluonElement } from '../gluonjs/gluon.js';
 class UseThePlatform extends GluonElement {
   get template() {
     return html`
-  <style>
-    :host {
-      display: inline-block;
-      padding: 26px;
-      background: ${this.color};
-    }
+      <style>
+        :host {
+          display: inline-block;
+          padding: 26px;
+          background: ${this.color};
+        }
 
-    ::slotted(p) {
-      margin: 0;
-      color: white;
-      font-family: sans-serif;
-      font-size: 40px;
-      font-weight: 900;
-      border-bottom: 4px solid white;
-      margin-bottom: 18px;
-    }
-  </style>
-  <slot></slot>
+        ::slotted(span) {
+          display: block;
+          color: white;
+          font-family: sans-serif;
+          font-size: 40px;
+          font-weight: 900;
+          border-bottom: 4px solid white;
+          margin-bottom: 18px;
+        }
+      </style>
+      <slot></slot>
     `;
   }
 
@@ -30,7 +30,6 @@ class UseThePlatform extends GluonElement {
 
   set color(color) {
     this.setAttribute('color', color);
-    this.render();
   }
 
   static get observedAttributes() {

@@ -96,17 +96,21 @@
     float: right;
   }
 
-  div[platform] p {
-    font-size: 108px;
-    font-weight: 900;
-    border-bottom: 8px solid white;
-    margin-bottom: 28px;
+  use-the-platform {
+    transform: scale(2);
   }
 
-  div[platform] {
-    display: inline-block;
-    padding: 50px;
-    background: var(--blue);
+  use-the-platform p {
+    margin-bottom: 18px !important;
+  }
+
+  slidem-slide.intro div {
+    flex-flow: column;
+    opacity: 0.95;
+  }
+
+  slidem-slide.intro img {
+    margin-bottom: 80px;
   }
 </style>
 
@@ -119,12 +123,20 @@
 <script nomodule src="index.nomodule.js"></script>
 
 <slidem-deck font="Roboto" loading>
+
+  <slidem-slide class="intro" fade-out center background="/images/background.png">
+    <div center>
+      <img height="400px" src="/images/flock.svg">
+      <img src="/images/bol.png">
+    </div>
+  </slidem-slide>
+
   <slidem-polymersummit-slide slide-out>
     <h2 slot="title">Web Components</h2>
     <p slot="subtitle">Past and Future</p>
     <img slot="logo" src="/images/polymer.png">
     <img slot="avatar" src="/images/avatar.jpg">
-    <p slot="event">Web Component Meetup November 2017</p>
+    <p slot="event">bol.com 2017</p>
     <p slot="speaker">Goffert van Gool</p>
     <a slot="email" href="mailto:ruphin@ruphin.net">ruphin@ruphin.net</a>
     <a slot="twitter" href="https://twitter.com/ruphin_">@ruphin_</a>
@@ -199,69 +211,71 @@
   <slidem-slide background="--blue">
     <h2 font-size="128px" line-height="1.1">GluonJS is</h2>
     <p font-size="78px" line-height="1.7" reveal>- A full featured Web Component framework</p>
-    <p font-size="78px" line-height="1.7" reveal>- Extremely Lightweight ( &lt; 5Kb )</p>
+    <p font-size="78px" line-height="1.7" reveal>- Extremely Lightweight ( &lt; 5kb )</p>
     <p font-size="78px" line-height="1.7" reveal>- Extremely Performant</p>
     <p font-size="78px" line-height="1.7" reveal>- Supported on all modern browsers</p>
   </slidem-slide>
 
   <slidem-slide center slide-in slide-out background="--dark">
     <div center>
-      <div platform>
-        <p>Use</p>
-        <p>The</p>
-        <p>Platform</p>
-      </div>
+      <use-the-platform>
+        <span>Use</span>
+        <span>The</span>
+        <span>Platform</span>
+      </use-the-platform>
     </div>
   </slidem-slide>
 
   <slidem-slide center slide-in slide-out background="--dark">
     <div center>
-      <p center class="centerCallout blue">Code</p>
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center slide-in background="--dark">
-    <div center>
       <p center class="centerCallout blue">
-        <a href="/demo/index.html" target="_blank">Demo</a>
+        <a href="./demo/index.html" target="_blank">Code</a>
       </p>
     </div>
   </slidem-slide>
 
-  <slidem-slide slide-in slide-out background="--blue">
-    <h2 font-size="128px" line-height="1.1">Easy to use</h2>
-    <p font-size="98px" line-height="1.7">
-      <a href="https://codepen.io/anon/pen/QOZdjq?editors=1010#0" target="_blank">- Codepen Demo</a>
-    </p>
-  </slidem-slide>
-
-  <slidem-slide slide-in slide-out background="--blue">
+  <slidem-slide slide-out background="--blue">
     <h2 font-size="128px" line-height="1.1">Easy to install</h2>
-    <p font-size="98px" line-height="1.7" reveal>- npm install myelement</p>
+    <p font-size="98px" line-height="1.7" reveal>- npm install myElement</p>
     <p font-size="98px" line-height="1.7" reveal>- done</p>
   </slidem-slide>
 
-  <slidem-slide slide-out background="--dark">
+  <slidem-slide slide-in background="--blue">
+    <h2 font-size="128px" line-height="1.1">Easy to use</h2>
+    <p font-size="98px" line-height="1.7">
+      <a href="https://codepen.io/anon/pen/QOZdjq?editors=1000#0" target="_blank">- Codepen</a>
+    </p>
+  </slidem-slide>
+
+  <slidem-slide slide-in slide-out background="--dark">
     <h2 font-size="128px" line-height="1.1">Production usage</h2>
     <p font-size="98px" line-height="1.7" reveal>
-      <a href="https://overwebs.ruph.in" target="_blank"></a>- Overwebs</a>
+      <a href="https://overwebs.ruph.in" target="_blank">- Overwebs</a>
     </p>
     <p font-size="98px" line-height="1.7" reveal>
       <a href="https://slidem.ruph.in" target="_blank">- Slide'm</a>
     </p>
   </slidem-slide>
 
-  <slidem-slide slide-in center background="--dark">
+  <slidem-slide center slide-in slide-out background="--dark">
+    <div center>
+      <p center class="centerCallout blue">
+        <a href="https://codepen.io/anon/pen/xpXLLz?editors=1000" target="_blank">Codepen?</a>
+      </p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide slide-in slide-out center background="--dark">
     <div center>
       <img src="/images/unclesam.jpg">
     </div>
   </slidem-slide>
 
-  <slidem-polymersummit-slide slide-in>
+  <slidem-polymersummit-slide>
     <h2 slot="title">Thanks</h2>
     <img slot="logo" src="/images/polymer.png">
     <img slot="avatar" src="/images/avatar.jpg">
-    <p slot="event">Web Component Meetup November 2017</p>
+    <p slot="event">bol.com 2017</p>
     <p slot="speaker">Goffert van Gool</p>
     <a slot="email" href="mailto:ruphin@ruphin.net">ruphin@ruphin.net</a>
     <a slot="twitter" href="https://twitter.com/ruphin_">@ruphin_</a>
