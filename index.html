@@ -114,6 +114,11 @@
 <span id="browser-sync-binding"></span>
 <!-- endbuild -->
 
+<script>
+  window.slidemAssetPath = asset => {
+    return `/webcomponents_introduction/${asset}`;
+  }
+</script>
 <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-hi-sd-ce.js"></script>
 <script type="module" src="index.js"></script>
 <script nomodule src="index.nomodule.js"></script>
@@ -122,39 +127,39 @@
   <slidem-polymersummit-slide slide-out>
     <h2 slot="title">Web Components</h2>
     <p slot="subtitle">Past and Future</p>
-    <img slot="logo" src="/images/polymer.png">
-    <img slot="avatar" src="/images/avatar.jpg">
+    <img slot="logo" src="./images/polymer.png">
+    <img slot="avatar" src="./images/avatar.jpg">
     <p slot="event">Web Component Meetup November 2017</p>
     <p slot="speaker">Goffert van Gool</p>
     <a slot="email" href="mailto:ruphin@ruphin.net">ruphin@ruphin.net</a>
     <a slot="twitter" href="https://twitter.com/ruphin_">@ruphin_</a>
   </slidem-polymersummit-slide>
 
-  <slidem-slide slide-out background="/images/summit2015.jpg">
+  <slidem-slide slide-out background="./images/summit2015.jpg">
   </slidem-slide>
 
-  <slidem-slide slide-out background="/images/islands.jpg">
+  <slidem-slide slide-out background="./images/islands.jpg">
   </slidem-slide>
 
-  <slidem-slide slide-out background="/images/sharing.jpg">
+  <slidem-slide slide-out background="./images/sharing.jpg">
   </slidem-slide>
 
-  <slidem-slide slide-out background="/images/patchroom.jpg">
+  <slidem-slide slide-out background="./images/patchroom.jpg">
   </slidem-slide>
 
-  <slidem-slide slide-out background="/images/summit2017.jpg">
+  <slidem-slide slide-out background="./images/summit2017.jpg">
   </slidem-slide>
 
-  <slidem-slide fade-out centerbg background="/images/support.png">
+  <slidem-slide fade-out centerbg background="./images/support.png">
   </slidem-slide>
 
-  <slidem-slide center centerbg background="/images/supportBoxed.png">
+  <slidem-slide center centerbg background="./images/supportBoxed.png">
     <div center>
       <p center reveal class="centerCallout blue">&gt; 60%</p>
     </div>
   </slidem-slide>
 
-  <slidem-slide center slide-in slide-out background="/images/fence.jpg">
+  <slidem-slide center slide-in slide-out background="./images/fence.jpg">
   </slidem-slide>
 
   <slidem-slide slide-out background="--blue">
@@ -181,16 +186,16 @@
     </p>
   </slidem-slide>
 
-  <slidem-slide center slide-in slide-out background="/images/small.jpg">
+  <slidem-slide center slide-in slide-out background="./images/small.jpg">
     <div center>
       <p center reveal class="centerCallout blue">Lightweight components</p>
     </div>
   </slidem-slide>
 
-  <slidem-slide slide-out background="/images/reactBundled.png">
+  <slidem-slide slide-out background="./images/reactBundled.png">
   </slidem-slide>
 
-  <slidem-slide center slide-out centerbg background="/images/gluon.png">
+  <slidem-slide center slide-out centerbg background="./images/gluon.png">
     <div center>
       <p center reveal class="centerCallout blue">GluonJS</p>
     </div>
@@ -223,7 +228,7 @@
   <slidem-slide center slide-in background="--dark">
     <div center>
       <p center class="centerCallout blue">
-        <a href="/demo/index.html" target="_blank">Demo</a>
+        <a href="./demo/index.html" target="_blank">Demo</a>
       </p>
     </div>
   </slidem-slide>
@@ -253,14 +258,14 @@
 
   <slidem-slide slide-in center background="--dark">
     <div center>
-      <img src="/images/unclesam.jpg">
+      <img src="./images/unclesam.jpg">
     </div>
   </slidem-slide>
 
   <slidem-polymersummit-slide slide-in>
     <h2 slot="title">Thanks</h2>
-    <img slot="logo" src="/images/polymer.png">
-    <img slot="avatar" src="/images/avatar.jpg">
+    <img slot="logo" src="./images/polymer.png">
+    <img slot="avatar" src="./images/avatar.jpg">
     <p slot="event">Web Component Meetup November 2017</p>
     <p slot="speaker">Goffert van Gool</p>
     <a slot="email" href="mailto:ruphin@ruphin.net">ruphin@ruphin.net</a>
