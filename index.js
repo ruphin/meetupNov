@@ -1,3 +1,3 @@
-import './node_modules/slidem/slidem-deck.js';
-import './node_modules/slidem/slidem-slide.js';
-import './node_modules/slidem/slidem-polymersummit-slide.js';
+import 'slidem/slidem-deck.js';
+import 'slidem/slidem-slide.js';
+import 'slidem/slidem-polymersummit-slide.js';
